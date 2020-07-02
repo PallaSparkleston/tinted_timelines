@@ -1,0 +1,92 @@
+saveGame(false);
+global.needLoadNoPos = true;
+//Room1
+if(argument0==inst_5580EE9F){
+	global.enterDirection=12;
+	room_goto(Room2)
+}
+//Room2
+if(argument0==inst_22E041D1){
+	global.enterDirection=12;
+	room_goto(Room3)
+}
+if(argument0==inst_419CF496){
+	global.enterDirection=6;
+	room_goto(Room1)
+}
+//Room3
+if(argument0==inst_58EBBE8C){
+	global.enterDirection=6;
+	room_goto(Room2)
+}
+if(argument0==inst_ACA964B){
+	global.enterDirection=9;
+	room_goto(Room4)
+}
+if(argument0==inst_7CF56374){
+	global.enterDirection=12;
+	room_goto(Room5)
+}
+//Room4
+if(argument0==inst_731B3BAE){
+	global.enterDirection=3;
+	room_goto(Room3)
+}
+//Room5
+if(argument0==inst_4B4E3D99){
+	global.enterDirection=6;
+	room_goto(Room3)
+}
+if(argument0==inst_7029313C){
+	global.enterDirection=12;
+	audio_play_sound(lateLevels, 5, true)
+	//audio_play_sound(bossMusic, 5, true)
+	audio_stop_sound(earlyLevels)
+	//Normally 6, its 10 for demo purposes
+	room_goto(Room6)
+}
+//Room6
+if(argument0==inst_6B0A8F02){
+	global.enterDirection=6;
+	audio_play_sound(earlyLevels,5,true)
+	audio_stop_sound(lateLevels)
+	room_goto(Room5)
+}
+if(argument0==inst_187F79BD){
+	global.enterDirection=12;
+	room_goto(Room7)
+}
+if(argument0==inst_4DBBB0D0){
+	global.enterDirection=3;
+	room_goto(Room8)
+}
+//Room7
+if(argument0==inst_21DD4904){
+	global.enterDirection=6;
+	room_goto(Room6)
+}
+//Room8
+if(argument0==inst_781937CF){
+	global.enterDirection=9;
+	room_goto(Room6)
+}if(argument0==inst_381E608E){
+	global.enterDirection=3;
+	room_goto(Room9)
+}
+//Room9
+if(argument0==inst_1D38DD1F){
+	global.enterDirection=9;
+	room_goto(Room8)
+}if(argument0==inst_76AF6AB9){
+	global.enterDirection=12;
+	audio_play_sound(bossMusic,5,true)
+	audio_stop_sound(lateLevels)
+	room_goto(Room10)
+}
+//Room10
+if(argument0==inst_24C7B5F1){
+	global.enterDirection=6;
+	audio_play_sound(lateLevels,5,true)
+	audio_stop_sound(bossMusic)
+	room_goto(Room9)
+}

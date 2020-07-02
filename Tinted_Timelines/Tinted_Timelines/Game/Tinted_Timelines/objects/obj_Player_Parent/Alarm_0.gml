@@ -1,0 +1,2 @@
+//Reload Timer
+isReloaded = true;

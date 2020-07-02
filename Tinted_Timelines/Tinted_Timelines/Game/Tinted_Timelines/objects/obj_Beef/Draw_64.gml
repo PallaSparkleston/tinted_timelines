@@ -1,0 +1,1 @@
+//draw_text(40,60, "Red Reload: " + string(alarm_get(0)));

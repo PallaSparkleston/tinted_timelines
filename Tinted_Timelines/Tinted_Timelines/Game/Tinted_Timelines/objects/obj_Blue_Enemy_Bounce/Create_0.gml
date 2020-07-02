@@ -1,0 +1,12 @@
+bulletSpeed = global.rubberSpeed;
+hasCollided = false;
+//damage = 0;
+tempAlarm0 = 0;
+bulletDir = 0;
+needsDir = true;
+tempAlarm1 = 0;
+alarm[0] = global.rubberBallUptime;
+alarm[1] = 5;
+selfColor = color.blue;
+bounces = 0;
+canCollide = true;
